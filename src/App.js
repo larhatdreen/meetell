@@ -1,14 +1,18 @@
-import './App.css';
+// import HelloScreen from './components/HelloScreen';
+// import Loader from './components/Loader';
+import "./App.css";
+import Carousel from './components/Carousel';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Test meetell.
-        </p>
-      </header>
-    </div>
+    <div>
+      
+      {/* <HelloScreen/>
+      
+   <Loader/> */}
+   <Carousel/>
+   </div>
   );
 }
 
