@@ -1,5 +1,5 @@
-.HelloScreen {
-  display: none;
+.helloScreen {
+  display: flex;
   align-items: center;
   justify-content: center;
   background: center / cover no-repeat url("./assets/HelloScreen.svg");
@@ -8,13 +8,13 @@
 }
 
 .loaderScreen {
-  position: absolute;
+
   left: 0;
   top: 0;
   display: flex;
   align-items: end;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding-bottom: 45px;
   background: rgb(6, 12, 34);
@@ -39,15 +39,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#060c22",endColorstr="#060c22",GradientType=1);
 }
 .loader {
-  width: 50px;
-  height: 63px;
-  overflow: auto;
-  margin: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: absolute;
+  top: 50%;
+  
   animation: rotate 1.5s infinite linear;
   -webkit-animation: rotate 1.5s infinite linear;
 }
@@ -56,7 +50,7 @@
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(00deg);
+    transform: rotate(0deg);
   }
 }
 @-webkit-keyframes rotate {
@@ -103,8 +97,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 40px;
-  overflow-x: scroll;
+  /* gap: 40px; */
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
@@ -144,7 +137,7 @@
 .navDots {
   display: flex;
   gap: 5px;
-  padding: 15px 0;
+  margin: 15px 0;
 }
 .dot {
   border: none;
