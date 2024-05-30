@@ -10,15 +10,6 @@ export default function PreLoader() {
         ["Приглашайте друзей на интересные вам маршруты,",<br></br>,"и заводите новых во время прогулки"]
     ];
     let loadText = Math.floor(Math.random() * 3);
-  //   const [loading, setLoading] = useState(true);
-
-  //   const loader = document.getElementById("loaderScreen");
-  //   if (loader) {
-  //   setTimeout(() => {
-  //     loader.style.display = "none";
-  //     setLoading(false);
-  //   }, 5000);
-  // }
 
   return (
       <div id='loaderScreen' className='loaderScreen'>

@@ -13,7 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
 }
-
+button {
+  background: none;
+  border: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

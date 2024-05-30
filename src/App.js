@@ -19,10 +19,11 @@ function App() {
   }
   return (
     <div>
-        {/* {hello ? <HelloScreen id="helloscreen"/> :
-        loading ? <PreLoader/> : */}
+      
+        {hello ? <HelloScreen id="helloscreen"/> :
+        loading ? <PreLoader/> :
             <Carousel/>
-        {/* } */}
+        }
     </div>
   
   );
